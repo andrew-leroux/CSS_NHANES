@@ -1,0 +1,18 @@
+\frametitle{rnahnesdata: Package Installation}
+
+\begin{itemize}
+\item Package installation may take a few minutes due to the size of the processed data.
+\item Requires the devtools package
+\item See ?"rnhanesdata-package" for details
+\end{itemize}
+
+\begin{knitrout}\small
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwa{if}\hlstd{(}\hlopt{!}\hlkwd{require}\hlstd{(}\hlstr{"rnhanesdata"}\hlstd{))\{}
+    \hlstd{devtools}\hlopt{::}\hlkwd{install_github}\hlstd{(}\hlstr{"andrew-leroux/rnhanesdata"}\hlstd{)}
+    \hlkwd{require}\hlstd{(}\hlstr{"rnhanesdata"}\hlstd{)}
+\hlstd{\}}
+\end{alltt}
+\end{kframe}
+\end{knitrout}
