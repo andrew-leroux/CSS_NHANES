@@ -4,5 +4,3 @@
 .Ruserdata
 data/
 figures/
-presentation/*
-!presentation/CSS_NHANES_accelerometry.pdf
