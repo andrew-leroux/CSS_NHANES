@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  22 FEB 2019 06:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  24 FEB 2019 10:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -724,28 +724,31 @@ Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 ))
-Package hyperref Info: Option `unicode' set `true' on input line 67.
-
+(/usr/local/texlive/2016/texmf-dist/tex/latex/beamer/multimedia/multimedia.sty
+Package: multimedia 2012/05/02 ver 0.02
+\mm@movie=\count153
+)
+Package hyperref Info: Option `unicode' set `true' on input line 68.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2016/05/05 v6.83n Hyperref: PDF Unicode definition (HO)
 )
 
 Package hyperref Warning: Option `pdfusetitle' has already been used,
-(hyperref)                setting the option has no effect on input line 67.
+(hyperref)                setting the option has no effect on input line 68.
 
 
 Package hyperref Warning: Option `bookmarks' has already been used,
-(hyperref)                setting the option has no effect on input line 67.
+(hyperref)                setting the option has no effect on input line 68.
 
-Package hyperref Info: Option `bookmarksnumbered' set `false' on input line 67.
+Package hyperref Info: Option `bookmarksnumbered' set `false' on input line 68.
 
-Package hyperref Info: Option `bookmarksopen' set `false' on input line 67.
-Package hyperref Info: Option `breaklinks' set `false' on input line 67.
+Package hyperref Info: Option `bookmarksopen' set `false' on input line 68.
+Package hyperref Info: Option `breaklinks' set `false' on input line 68.
 
 Package hyperref Warning: Option `backref' has already been used,
-(hyperref)                setting the option has no effect on input line 67.
+(hyperref)                setting the option has no effect on input line 68.
 
-Package hyperref Info: Option `colorlinks' set `false' on input line 67.
+Package hyperref Info: Option `colorlinks' set `false' on input line 68.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/breakurl/breakurl.sty
 Package: breakurl 2013/04/10 v1.40 Breakable hyperref URLs
 
@@ -757,7 +760,7 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 \XKV@toks=\toks43
 \XKV@tempa@toks=\toks44
 )
-\XKV@depth=\count153
+\XKV@depth=\count154
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 
@@ -878,29 +881,29 @@ Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 (./CSS_NHANES_accelerometry.aux)
 \openout1 = `CSS_NHANES_accelerometry.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 88.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 88.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 89.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 89.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    ... okay on input line 89.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -938,16 +941,16 @@ LaTeX Font Info:    ... okay on input line 88.
 
 (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count154
+\scratchcounter=\count155
 \scratchdimen=\dimen194
 \scratchbox=\box53
-\nofMPsegments=\count155
-\nofMParguments=\count156
+\nofMPsegments=\count156
+\nofMParguments=\count157
 \everyMPshowfont=\toks45
-\MPscratchCnt=\count157
+\MPscratchCnt=\count158
 \MPscratchDim=\dimen195
-\MPnumerator=\count158
-\makeMPintoPDFobject=\count159
+\MPnumerator=\count159
+\makeMPintoPDFobject=\count160
 \everyMPtoPDFconversion=\toks46
 ) (/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -966,7 +969,7 @@ e
 ))
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box54
-Package hyperref Info: Link coloring OFF on input line 88.
+Package hyperref Info: Link coloring OFF on input line 89.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -974,73 +977,73 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count160
+\c@section@level=\count161
 )
-LaTeX Info: Redefining \ref on input line 88.
-LaTeX Info: Redefining \pageref on input line 88.
-LaTeX Info: Redefining \nameref on input line 88.
+LaTeX Info: Redefining \ref on input line 89.
+LaTeX Info: Redefining \pageref on input line 89.
+LaTeX Info: Redefining \nameref on input line 89.
 
 (./CSS_NHANES_accelerometry.out) (./CSS_NHANES_accelerometry.out)
 \@outlinefile=\write5
 \openout5 = `CSS_NHANES_accelerometry.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 88.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 89.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 88.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 89.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 88.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 88.
+(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 89.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 89.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/bx/n on input line 88.
+(Font)                  OT1/cmr/bx/n --> T1/cmss/bx/n on input line 89.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/bx/n on input line 88.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 88.
+(Font)                  OT1/cmr/bx/n --> T1/cmss/bx/n on input line 89.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 89.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 88.
+(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 89.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 88.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 88.
+(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 89.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 89.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 88.
+(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 89.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 88.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 88.
+(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 89.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 89.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 88.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 89.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 88.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 89.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/bx/n on input line 88.
+(Font)                  T1/cmss/m/n --> T1/cmss/bx/n on input line 89.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/bx/it on input line 88.
+(Font)                  T1/cmss/m/it --> T1/cmss/bx/it on input line 89.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/cmr/bx/n on input line 88.
+(Font)                  OT1/cmss/bx/n --> T1/cmr/bx/n on input line 89.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/cmss/bx/n --> T1/cmss/bx/n on input line 88.
+(Font)                  T1/cmss/bx/n --> T1/cmss/bx/n on input line 89.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/bx/n on input line 88.
+(Font)                  T1/cmss/m/n --> T1/cmss/bx/n on input line 89.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/bx/it on input line 88.
+(Font)                  T1/cmss/m/it --> T1/cmss/bx/it on input line 89.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/cmtt/m/n --> T1/cmtt/bx/n on input line 88.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 88.
+(Font)                  T1/cmtt/m/n --> T1/cmtt/bx/n on input line 89.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 89.
 LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `normal' on input line 88
+(Font)              `pureletters' in the math version `normal' on input line 89
 .
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  T1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 88
+(Font)                  T1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 89
 .
 LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `bold' on input line 88.
+(Font)              `pureletters' in the math version `bold' on input line 89.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  T1/cmss/bx/it --> OT1/mathkerncmss/m/sl on input line 8
-8.
+9.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 88.
+ut line 89.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/beamer/translator/dicts/translato
 r-basic-dictionary/translator-basic-dictionary-English.dict
@@ -1066,71 +1069,158 @@ Dictionary: translator-numbers-dictionary, Language: English
 r-theorem-dictionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 88.
+LaTeX Info: Redefining \includegraphics on input line 89.
 
 (./CSS_NHANES_accelerometry.nav)
 
 Package hyperref Warning: Option `pdfauthor' has already been used,
-(hyperref)                setting the option has no effect on input line 91.
+(hyperref)                setting the option has no effect on input line 92.
 
 
 LaTeX Font Warning: Font shape `T1/cmss/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 92.
+(Font)              size <5> substituted on input line 93.
 
 [1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 113.
+[2
 
+] [3
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Try loading font information for U+msa on input line 113.
+] <accelerometers_example.png, id=184, 1612.0225pt x 774.895pt>
+File: accelerometers_example.png Graphic file (type png)
+
+<use accelerometers_example.png>
+Package pdftex.def Info: accelerometers_example.png used on input line 134.
+(pdftex.def)             Requested size: 290.74263pt x 139.75885pt.
+ [4
+
+ <./accelerometers_example.png>]
+<wearables_example.png, id=223, 1738.495pt x 1201.48875pt>
+File: wearables_example.png Graphic file (type png)
+
+<use wearables_example.png>
+Package pdftex.def Info: wearables_example.png used on input line 142.
+(pdftex.def)             Requested size: 290.74263pt x 200.93207pt.
+ [5
+
+ <./wearables_example.png>]
+LaTeX Font Info:    Try loading font information for U+msa on input line 158.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 113.
+LaTeX Font Info:    Try loading font information for U+msb on input line 158.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 113.
+line 158.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
-) [2
+) [6
 
-] [3
+] [7
 
-] <accel_data_long.png, id=149, 1270.7475pt x 216.81pt>
+] [8
+
+] [9
+
+] <raw_accel_data_pt1.png, id=410, 1383.1675pt x 1072.005pt>
+File: raw_accel_data_pt1.png Graphic file (type png)
+
+<use raw_accel_data_pt1.png>
+Package pdftex.def Info: raw_accel_data_pt1.png used on input line 208.
+(pdftex.def)             Requested size: 290.74263pt x 225.32397pt.
+
+Overfull \vbox (4.67674pt too high) detected at line 208
+ []
+
+[10
+
+ <./raw_accel_data_pt1.png>]
+<raw_accel_data_pt2.png, id=448, 1611.01875pt x 1107.13625pt>
+File: raw_accel_data_pt2.png Graphic file (type png)
+
+<use raw_accel_data_pt2.png>
+Package pdftex.def Info: raw_accel_data_pt2.png used on input line 213.
+(pdftex.def)             Requested size: 290.74263pt x 199.79962pt.
+ [11
+
+ <./raw_accel_data_pt2.png>]
+<micro_vs_macro_accel_data.png, id=487, 891.33pt x 674.52pt>
+File: micro_vs_macro_accel_data.png Graphic file (type png)
+
+<use micro_vs_macro_accel_data.png>
+Package pdftex.def Info: micro_vs_macro_accel_data.png used on input line 230.
+(pdftex.def)             Requested size: 290.74263pt x 220.0192pt.
+ [12
+
+ <./micro_vs_macro_accel_data.png>]
+<profile_id1.jpeg, id=525, 652.4375pt x 803.0pt>
+File: profile_id1.jpeg Graphic file (type jpg)
+ <use profile_id1.jpeg>
+Package pdftex.def Info: profile_id1.jpeg used on input line 237.
+(pdftex.def)             Requested size: 182.11378pt x 224.14662pt.
+
+Overfull \vbox (3.49939pt too high) detected at line 237
+ []
+
+[13
+
+ <./profile_id1.jpeg>] <profile_id2.jpeg, id=563, 652.4375pt x 803.0pt>
+File: profile_id2.jpeg Graphic file (type jpg)
+
+<use profile_id2.jpeg>
+Package pdftex.def Info: profile_id2.jpeg used on input line 243.
+(pdftex.def)             Requested size: 182.11378pt x 224.14662pt.
+
+Overfull \vbox (3.49939pt too high) detected at line 243
+ []
+
+[14
+
+ <./profile_id2.jpeg>] [15
+
+]
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 283.
+
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+) [16
+
+] [17
+
+]
+<accel_data_long.png, id=711, 1270.7475pt x 216.81pt>
 File: accel_data_long.png Graphic file (type png)
 
 <use accel_data_long.png>
-Package pdftex.def Info: accel_data_long.png used on input line 143.
+Package pdftex.def Info: accel_data_long.png used on input line 312.
 (pdftex.def)             Requested size: 290.74263pt x 49.6039pt.
- [4
+ [18
 
  <./accel_data_long.png>]
-<accel_data_wide.png, id=183, 1301.86375pt x 664.4825pt>
+<accel_data_wide.png, id=748, 1301.86375pt x 664.4825pt>
 File: accel_data_wide.png Graphic file (type png)
 
 <use accel_data_wide.png>
-Package pdftex.def Info: accel_data_wide.png used on input line 160.
+Package pdftex.def Info: accel_data_wide.png used on input line 329.
 (pdftex.def)             Requested size: 290.74263pt x 148.39693pt.
- [5
+ [19
 
  <./accel_data_wide.png>]
-<rnhanesdata.png, id=221, 1332.98pt x 684.5575pt>
+<rnhanesdata.png, id=788, 1332.98pt x 684.5575pt>
 File: rnhanesdata.png Graphic file (type png)
  <use rnhanesdata.png>
-Package pdftex.def Info: rnhanesdata.png used on input line 168.
+Package pdftex.def Info: rnhanesdata.png used on input line 337.
 (pdftex.def)             Requested size: 290.74263pt x 149.30786pt.
 
-[6
+[20
 
  <./rnhanesdata.png>]
 \openout4 = `CSS_NHANES_accelerometry.vrb'.
@@ -1138,61 +1228,43 @@ Package pdftex.def Info: rnhanesdata.png used on input line 168.
  (./CSS_NHANES_accelerometry.vrb
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <9> not available
 (Font)              Font shape `T1/cmtt/m/n' tried instead on input line 12.
-) [7
+) [21
+
+] [22
+
+] [23
 
 ]
-<individual_profiles_raw.jpeg, id=287, 2007.5pt x 752.8125pt>
-File: individual_profiles_raw.jpeg Graphic file (type jpg)
+<wear_time_by_dow.jpeg, id=937, 1003.75pt x 552.0625pt>
+File: wear_time_by_dow.jpeg Graphic file (type jpg)
 
-<use individual_profiles_raw.jpeg>
-Package pdftex.def Info: individual_profiles_raw.jpeg used on input line 205.
-(pdftex.def)             Requested size: 290.74263pt x 109.0229pt.
- [8
+<use wear_time_by_dow.jpeg>
+Package pdftex.def Info: wear_time_by_dow.jpeg used on input line 418.
+(pdftex.def)             Requested size: 290.74263pt x 159.90869pt.
+ [24
 
- <./individual_profiles_raw.jpeg>]
-<individual_profiles_trans.jpeg, id=319, 2007.5pt x 752.8125pt>
-File: individual_profiles_trans.jpeg Graphic file (type jpg)
+ <./wear_time_by_dow.jpeg>]
+<ndays_accel_by_age.jpeg, id=974, 1003.75pt x 501.875pt>
+File: ndays_accel_by_age.jpeg Graphic file (type jpg)
 
-<use individual_profiles_trans.jpeg>
-Package pdftex.def Info: individual_profiles_trans.jpeg used on input line 214.
+<use ndays_accel_by_age.jpeg>
+Package pdftex.def Info: ndays_accel_by_age.jpeg used on input line 431.
+(pdftex.def)             Requested size: 290.74263pt x 145.37154pt.
+ [25
 
-(pdftex.def)             Requested size: 290.74263pt x 109.0229pt.
- [9
+ <./ndays_accel_by_age.jpeg>]
+<TLAC_by_age_category.jpeg, id=1012, 1405.25pt x 1003.75pt>
+File: TLAC_by_age_category.jpeg Graphic file (type jpg)
 
- <./individual_profiles_trans.jpeg>]
-<individual_profiles_trans_sm.jpeg, id=353, 2007.5pt x 752.8125pt>
-File: individual_profiles_trans_sm.jpeg Graphic file (type jpg)
+<use TLAC_by_age_category.jpeg>
+Package pdftex.def Info: TLAC_by_age_category.jpeg used on input line 437.
+(pdftex.def)             Requested size: 290.74263pt x 207.66927pt.
+ [26
 
-<use individual_profiles_trans_sm.jpeg>
-Package pdftex.def Info: individual_profiles_trans_sm.jpeg used on input line 2
-25.
-(pdftex.def)             Requested size: 290.74263pt x 109.0229pt.
- [10
+ <./TLAC_by_age_category.jpeg>] [27
 
- <./individual_profiles_trans_sm.jpeg>] <population_curves.jpeg, id=386, 1003.7
-5pt x 752.8125pt>
-File: population_curves.jpeg Graphic file (type jpg)
-
-<use population_curves.jpeg>
-Package pdftex.def Info: population_curves.jpeg used on input line 238.
-(pdftex.def)             Requested size: 218.05696pt x 163.54012pt.
-
-Overfull \vbox (4.33685pt too high) detected at line 238
- []
-
-[11
-
- <./population_curves.jpeg>] [12
-
-] [13
-
-] [14
-
-] [15
-
-] [16
-
-] [17
+]
+[28
 
 ]
 \tf@nav=\write6
@@ -1204,50 +1276,47 @@ Overfull \vbox (4.33685pt too high) detected at line 238
 \tf@snm=\write8
 \openout8 = `CSS_NHANES_accelerometry.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 344.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 344.
-
-(./CSS_NHANES_accelerometry.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 344.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 344.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 507.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 507.
+ (./CSS_NHANES_accelerometry.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 507.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 507.
 Package rerunfilecheck Info: File `CSS_NHANES_accelerometry.out' has not change
 d.
-(rerunfilecheck)             Checksum: 393AC8594321DDC1E9515818646A5BC1;624.
+(rerunfilecheck)             Checksum: DF16BB4655C70957C7E14CA6FA460EDA;1275.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 344.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 507.
  ) 
 Here is how much of TeX's memory you used:
- 21081 strings out of 493014
- 385152 string characters out of 6133351
- 428548 words of memory out of 5000000
- 24113 multiletter control sequences out of 15000+600000
+ 21272 strings out of 493014
+ 388277 string characters out of 6133351
+ 431249 words of memory out of 5000000
+ 24265 multiletter control sequences out of 15000+600000
  20105 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,16n,67p,475b,578s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></
-usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></u
-sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></u
-sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
-r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/
-local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsi1440.pfb></usr/lo
-cal/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfss0500.pfb></usr/loca
-l/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfss0600.pfb></usr/local/
-texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfss0700.pfb></usr/local/te
-xlive/2016/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb></usr/local/texl
-ive/2016/texmf-dist/fonts/type1/public/cm-super/sfss0900.pfb></usr/local/texliv
-e/2016/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/local/texlive/
-2016/texmf-dist/fonts/type1/public/cm-super/sfss1440.pfb></usr/local/texlive/20
-16/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/local/texlive/2016
-/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on CSS_NHANES_accelerometry.pdf (17 pages, 1373192 bytes).
+usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
+sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr
+/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsi1440.pfb></usr/l
+ocal/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfss0500.pfb></usr/loc
+al/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfss0600.pfb></usr/local
+/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfss0700.pfb></usr/local/t
+exlive/2016/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb></usr/local/tex
+live/2016/texmf-dist/fonts/type1/public/cm-super/sfss0900.pfb></usr/local/texli
+ve/2016/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/local/texlive
+/2016/texmf-dist/fonts/type1/public/cm-super/sfss1440.pfb></usr/local/texlive/2
+016/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/local/texlive/201
+6/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on CSS_NHANES_accelerometry.pdf (28 pages, 5699201 bytes).
 PDF statistics:
- 667 PDF objects out of 1000 (max. 8388607)
- 605 compressed objects within 7 object streams
- 40 named destinations out of 1000 (max. 500000)
- 148 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1181 PDF objects out of 1200 (max. 8388607)
+ 1094 compressed objects within 11 object streams
+ 67 named destinations out of 1000 (max. 500000)
+ 214 words of extra memory for PDF output out of 10000 (max. 10000000)
 

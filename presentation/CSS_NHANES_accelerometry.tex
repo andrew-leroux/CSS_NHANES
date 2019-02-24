@@ -55,6 +55,7 @@
 \setcounter{tocdepth}{3}
 \usepackage{url}
 \usepackage{graphicx}
+\usepackage{multimedia}
 \ifx\hypersetup\undefined
   \AtBeginDocument{%
     \hypersetup{unicode=true,pdfusetitle,
@@ -88,14 +89,183 @@
 \begin{document}
 
 \title[]{Accelerometry: Data structure and analysis}
-\author[]{Andrew Leroux \& Jacek Urbanek \& Ciprian Crainiceanu}
+\author[]{Andrew Leroux \& Jacek K Urbanek \& Ciprian Crainiceanu}
 \makebeamertitle
 
 
 
 
+\section{Background}
 
-\section{Introduction}
+\begin{frame}
+\frametitle{Accelerometry: Objectively Measured Physical Activity}
+\begin{itemize}
+\item What are wearable and implantable devices?
+\item Overview of accelerometry data 
+    \begin{itemize}
+    \item Micro-scale (raw, sub-second) data
+    \item Macro-scale data
+    \end{itemize}
+\end{itemize}
+\end{frame}
+
+
+\subsection{Wearable and Implantable Devices}
+
+
+% \section{Weabale}
+\begin{frame}
+\frametitle{Wearable and Implantable Technology}
+\begin{itemize}
+\item Wearable and implantable devices are smart electronic devices that can be worn on the body as implants or accessories
+\item Emerging technology (increasing variety of sensors and signals measured)
+\item Growing popularity in health research and consumer tech
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Accelerometry}
+\begin{itemize}
+\item Accelerometry: non-invansive monitoring of (a proxy of) activity using accelerometers
+\item Accelerometer: device which measures acceleration
+\end{itemize}
+\includegraphics[width=\textwidth]{accelerometers_example}
+\end{frame}
+
+
+
+
+\begin{frame}
+\frametitle{Other Wearables/Implabtables}
+\includegraphics[width=\textwidth]{wearables_example}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Scientific Questions}
+\begin{itemize}
+\item Physical activity and health (mortality, comorbidities, etc.)\footnotemark
+\item Epidemiology of ageing\footnotemark
+\item Circadian rhythms\footnotemark
+\item Sleep quality\footnotemark
+\end{itemize}
+
+\footnotetext{Leroux A, Di J, Smirnova E, et al. Organizing and Analyzing the Activity Data in NHANES. Statistics in Biosciences. 2019. 10.1007/s12561-018-09229-9.}
+\footnotetext{Varma VR, Dey D, Leroux A, et al. Re-evaluating the effect of age on physical activity over the lifespan. Prev Med. 2017;101:102-108.}
+\footnotetext{Xiao L, Huang L, Schrack JA, et al. Quantifying the lifetime circadian rhythm of physical activity: a covariate-dependent functional approach. Biostatistics. 2014;16(2):352-67.}
+\footnotetext{Jacek K. Urbanek, Adam P. Spira, et al. Epidemiology of objectively measured bedtime and chronotype in US adolescents and adults: NHANES 2003–2006. Chronobiology International. 2018;35(3):416-434}
+\end{frame}
+
+
+
+
+
+\subsection{Overview of Accelerometry Data}
+
+\begin{frame}
+\frametitle{Measurement}
+
+\begin{itemize}
+\item Accelerometers are used to quantify "PA" as 
+    \begin{itemize}
+    \item Activity counts 
+    \item Number of steps 
+    \item Number of calories burned
+    \end{itemize}
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Accelerometry in Action}
+% \movie[width=8cm,height=4.5cm]{Ciprian wrist accelerometers}{AccVideo_Crainiceanu_Urbanek_720.mov}
+\movie[width=10cm,height=7cm]{Wrist + Ankle accelerometer video}{AccVideo_Karas_Urbanek.avi}
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Major Data Challenges}
+\begin{itemize}
+\item Size
+\item Complexity and heterogeneity
+\item Lack of standardized data collection protocols
+    \begin{itemize}
+    \item Device type
+    \item Device location 
+    \item Wear/non-wear compliance
+    \item Number of days of observation
+    \end{itemize}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Raw Accelerometry Data}
+\includegraphics[width=\textwidth]{raw_accel_data_pt1}
+\end{frame}
+
+\begin{frame}
+\frametitle{Raw Accelerometry Data}
+\includegraphics[width=\textwidth]{raw_accel_data_pt2}
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{frame}
+\frametitle{Micro- vs Macro-Scale Accelerometry Data}
+\includegraphics[width=\textwidth]{micro_vs_macro_accel_data}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Macro Scale Accelerometry Data: Compliant Participant}
+\centering
+\includegraphics[height=\textheight]{profile_id1}
+\end{frame}
+
+\begin{frame}
+\frametitle{Macro Scale Accelerometry Data: Non-Compliant Participant}
+\centering
+\includegraphics[height=\textheight]{profile_id2}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Macro Scale Accelerometry Data}
+\begin{itemize}
+\item Easier to see patterns visually
+\item Still "big" data! 1440 obs/day $\times$ 7 days. Can we reduce the dimension of the data further?
+\item Common appraoch: calculate a single (scalar) summary measure per day of "good" data, 
+average across days within a subject (more on this later)
+
+\end{itemize}
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Application: NHANES}
 
 \begin{frame}
 \frametitle{NHANES accelerometry: Reproducing these Analyses}
@@ -113,7 +283,6 @@
 \end{frame}
 
 
-\section{Background}
 
 
 \begin{frame}
@@ -156,7 +325,7 @@
 \item 7 rows per participant, descending cronologoical order
 \end{itemize}
 \includegraphics[width=\textwidth]{accel_data_wide}
-\footnotetext{Leroux, A., Di, J., Smirnova, E. et al. Stat Biosci (2019). https://doi.org/10.1007/s12561-018-09229-9}
+\footnotetext{Leroux A, Di J, Smirnova E, et al. Organizing and Analyzing the Activity Data in NHANES. Statistics in Biosciences. 2019. 10.1007/s12561-018-09229-9.}
 \end{frame}
 
 
@@ -164,7 +333,7 @@
 \begin{frame}
 \frametitle{NHANES accelerometry: {\it rnhanesdata} package}
 \includegraphics[width=\textwidth]{rnhanesdata}
-\footnotetext{Leroux, A., Di, J., Smirnova, E. et al. Stat Biosci (2019). https://doi.org/10.1007/s12561-018-09229-9}
+\footnotetext{Leroux A, Di J, Smirnova E, et al. Organizing and Analyzing the Activity Data in NHANES. Statistics in Biosciences. 2019. 10.1007/s12561-018-09229-9.}
 \end{frame}
 
 
@@ -191,51 +360,8 @@
 
 
 
-\subsection{Data Analysis}
+\section{EDA}
 
-
-\begin{frame}
-\frametitle{NHANES accelerometry: EDA}
-\begin{itemize}
-\item 7 days of data for two participants at the minute level
-\item Estimated non-wear time has been imputed as 0
-\item Dominated by a few very large values
-\end{itemize}
-\includegraphics[width=\textwidth]{individual_profiles_raw}
-\end{frame}
-
-\begin{frame}
-\begin{itemize}
-\item Apply a $\log(1+x)$ transformaiton at the minute level
-\item Still a high degree of minute-to-minute variability
-\end{itemize}
-\frametitle{NHANES accelerometry: EDA}
-\includegraphics[width=\textwidth]{individual_profiles_trans}
-\end{frame}
-
-
-\begin{frame}
-\begin{itemize}
-\item Apply a $\log(1+x)$ transformaiton at the minute level
-\item Still a high degree of minute-to-minute variability
-\item Smooth the data
-\end{itemize}
-\frametitle{NHANES accelerometry: EDA}
-\includegraphics[width=\textwidth]{individual_profiles_trans_sm}
-\end{frame}
-
-
-
-\begin{frame}
-\frametitle{NHANES accelerometry: EDA}
-\begin{itemize} 
-\item Visualizing the whole population
-\item Subset based on $\geq 10$ hours of wear time, smooth the log transformed data, then average profiles across days within participants
-\end{itemize}
-\begin{center}
-\includegraphics[width=0.75\textwidth]{population_curves}
-\end{center}
-\end{frame}
 
 
 
@@ -258,10 +384,70 @@
 \end{frame}
 
 
+
+
+\subsection{Compliance}
+
+\begin{frame}
+\frametitle{NHANES accelerometry: Compliance}
+\begin{itemize}
+\item Given our estimated wear/non-wear time algorithm, how much data do we lose?
+\item Generally, scalar features are derived from individuals' activity. 
+\item Idea: we are attempting to estimate "long-term average" levels (or patterns) of activity
+\item Differential day-of-week compliance?
+    \begin{itemize}
+    \item People tend to be less active on the weekends 
+    \item If certain groups of people disproportionately refuse/forget to wear the device on weekends,
+            overestimate that group's average activity
+    \end{itemize}
+\end{itemize}
+\end{frame}
+
+
+
+
+\begin{frame}
+\frametitle{NHANES accelerometry: Compliance}
+\begin{itemize}
+\item Age is one of the most important confounders in most epidemiologic analyses
+\item Visualize distribution of age by day of week for "good" data
+\end{itemize}
+\begin{center}
+\includegraphics[width=\textwidth]{wear_time_by_dow}
+\end{center}
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{NHANES accelerometry: Compliance}
+\begin{itemize}
+\item Plot number of days of "good" accelerometry data versus age
+\item Some evidence of differential day-of-week compliance by age. This is generally ignored in practice! 
+\end{itemize}
+\begin{center}
+\includegraphics[width=\textwidth]{ndays_accel_by_age}
+\end{center}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{NHANES accelerometry: Compliance}
+\includegraphics[width=\textwidth]{TLAC_by_age_category}
+\end{frame}
+
+
+
+
+
+\subsection{Feature Extraction}
+
+
+
+
 \begin{frame}
 \frametitle{NHANES accelerometry: Features}
 \begin{itemize}
-\item What even is an "activity count"?
 \item Current standard: calculate single summaries of the data
     \begin{itemize}
     \item Volume of activity\footnotemark
@@ -276,7 +462,7 @@
         \item Timing of physical activity (activity profiles)
         \end{itemize}
     \end{itemize}
-\item Here, we focuse on analyzing patterns of activity using subject-specific average activity profiles. 
+\item Here, we focuse on analyzing patterns of activity using subject-specific average activity profiles and scalar summaries of total volume of activity. 
 \end{itemize}
 
 
@@ -287,55 +473,32 @@
 
 
 
+\subsection{}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Lab Exercises}
 
 \begin{frame}
-\frametitle{NHANES accelerometry: Analysis Procedure}
-\begin{itemize}
-\item In the subsequent analyses presented here we work with activity profiles
-\item The data is smoothed, binned into 5 minute intervals, then averaged across days. 
-This is done separately for the un-transformed and log-transformed activity counts
-\item Binning is done mostly to reduce computational burden
-\item None of the results here adjust for the survey design of NHANES 
-\end{itemize}
+\frametitle{Lab Exercises}
+
 \end{frame}
 
-
-
-
-
-
-
-
-
-
-
-
-\section{Concluding Remarks}
-
-\begin{frame}
-\frametitle{Some Thoughts}
-\begin{itemize}
-\item D
-\end{itemize}
-\end{frame}
-
-
-
-\begin{frame}
-\frametitle{Open Problems}
-\begin{itemize}
-\item F
-\end{itemize}
-\end{frame}
-
-
-
-\begin{frame}
-\frametitle{In class exercises}
-\begin{itemize}
-\item Find 
-\end{itemize}
-\end{frame}
 
 
 

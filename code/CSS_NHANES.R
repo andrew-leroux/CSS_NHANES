@@ -12,10 +12,16 @@ rm(list=ls())
 ##                  * number of bad mental days in the last 30 days
 ##                  * poverty-to-income ratio
 ##                  * employment status
-##              1d. Apply accelerometry exclusion criteria based on whether they have sufficient "good" accelerometry data
+##              1d. Some exploratory plots looking at estimated wear-time protocol compliance
+##              1e. Apply accelerometry exclusion criteria based on whether they have sufficient "good" accelerometry data
+##                  and calculate some features of interest
 ##                  * Exclude indviduals with data quality flags (calibration, NHANES derived flag)
 ##                  * Exclude days with less than 10 hour of estimated wear time
 ##                  * Exclude indviduals with fewer than 3 days with >= 10 hours of wear time
+##                  * Calculate:
+##                       - Total activity counts (TAC)
+##                       - Total log activity counts (TLAC)
+##                       - Average profiles
 ##  - Section 2: Exploratory data analysis
 ##               Note that we do not account for survey weights in our EDA (plots, summary statistics), 
 ##               though it is possible to do so using functions from the survey package. Complex survey 
@@ -76,7 +82,7 @@ data("Covariate_C");data("Covariate_D")  ## demographic/comorbidity data matrice
 
 
 ## set up some theme options for plotting done later
-textsize <- 20
+textsize <- 24
 theme_set(theme_bw(base_size=textsize) + 
           theme(panel.border = element_blank(), panel.grid.major = element_blank(),
                 panel.grid.minor = element_blank(), axis.line = element_line(colour = "black"),
@@ -256,62 +262,52 @@ data <-
 
 
 
-##########################################################################################################################
-##                                                                                                                      ##
-##  Section 1d: Apply accelerometry exclusion criteria based on whether they have sufficient "good" accelerometry data  ##
-##                                                                                                                      ##
-##########################################################################################################################
+#####################################################################################################################
+##                                                                                                                 ##
+##  Section 1d: Some exploratory plots looking at individual profiles and estimated wear-time protocol compliance  ##
+##                                                                                                                 ##
+#####################################################################################################################
 
-
-
-## Is there differential day-of-week wear by age?
-## These boxplots do not account for survey weights!
-plt_wt_dow_unwgt <- 
-    data %>% 
-    filter(good_day==1) %>% 
-    ggplot(aes(x=DoW, y=Age)) + geom_boxplot() +
-    theme(axis.text.x = element_text(angle = 25, vjust = 1, hjust=1)) +
-    xlab("") + ggtitle("Unweighted")
-## Account for examination weights. Note, these are -technically- not 4 year survey weights
-## and will give misleading population estimates (i.e. estimated total number of 40 year old women), 
-## but are sufficient for exploratry analyses.
-plt_wt_dow_wgt <- 
-    data %>% 
-    filter(good_day==1) %>% 
-    ggplot(aes(x=DoW, y=Age, weight=WTMEC2YR/mean(WTMEC2YR))) + geom_boxplot() +
-    theme(axis.text.x = element_text(angle = 25, vjust = 1, hjust=1)) +
-    xlab("") + ggtitle("Survey weighted") 
 
 if(make_plots){
-    jpeg(file.path(figure_path, "wear_time_by_dow.jpeg"), height=550, width=1000, quality=100)
-    grid.arrange(plt_wt_dow_unwgt, plt_wt_dow_wgt,ncol=2,
-                 top=textGrob("Age at accelerometer wear vs day of week",gp=gpar(fontsize=textsize*1.25,font=3)))    
-    dev.off()   
+    source(file.path(code_path, "make_profile_plots.R"))
+}
+
+if(make_plots){
+    source(file.path(code_path, "make_compliance_eda_plots.R"))
 }
 
 
     
-    
-data %>% 
-    filter(good_day==1) %>% 
-    group_by(SEQN) %>% 
-    distinct(Age, Age_cat, n_good_days) %>% 
-    ggplot(aes(x=Age, y=n_good_days)) + geom_jitter(height=0.1, width=0, color=rgb(0,0,0,0.2)) + geom_smooth() + 
-    ylab("Number of good days of accelerometry data") + 
-    scale_y_continuous(breaks=1:7) + facet_wrap(~)
 
+
+
+#############################################################################################
+##                                                                                         ##
+##  Section 1e: Some exploratory plots looking at estimated wear-time protocol compliance  ##
+##                                                                                         ##
+#############################################################################################
 
 
 
 data_analysis <- 
     data %>% 
     filter(n_good_days >= 3 & good_day == 1 & Age >= 6) 
-## Does average activity vary by day of week? Need to account for the fact that 
-## Stratify by age
-data_analysis %>% 
-    mutate("TLAC" = rowSums(log(1+select(., one_of(paste0("MIN",1:1440)))),na.rm=TRUE)) %>%
-    ggplot(aes(x=DoW, y=TLAC)) + geom_boxplot() + facet_wrap(~Age_cat,nrow=2)
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     
 
