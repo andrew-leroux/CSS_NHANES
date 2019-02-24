@@ -89,7 +89,7 @@
 \begin{document}
 
 \title[]{Accelerometry: Data structure and analysis}
-\author[]{Andrew Leroux \& Jacek K Urbanek \& Cipria Crainiceanu}
+\author[]{Andrew Leroux \& Jacek K Urbanek \& Ciprian Crainiceanu}
 \makebeamertitle
 
 
@@ -101,6 +101,7 @@
 \frametitle{Accelerometry: Objectively Measured Physical Activity}
 \begin{itemize}
 \item What are wearable and implantable devices?
+\item Why do we care?
 \item Overview of accelerometry data 
     \begin{itemize}
     \item Micro-scale (raw, sub-second) data
@@ -125,6 +126,15 @@
 
 
 \begin{frame}
+\frametitle{What are Wearables Useful for?}
+\begin{itemize}
+\item Prediction of mortality: simple summary features predict 5-year mortality better than age
+\item others?
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
 \frametitle{Accelerometry}
 \begin{itemize}
 \item Accelerometry: non-invansive monitoring of (a proxy of) activity using accelerometers
@@ -132,6 +142,9 @@
 \end{itemize}
 \includegraphics[width=\textwidth]{accelerometers_example}
 \end{frame}
+
+
+
 
 
 
@@ -146,7 +159,7 @@
 \frametitle{Scientific Questions}
 \begin{itemize}
 \item Physical activity and health (mortality, comorbidities, etc.)\footnotemark
-\item Epidemiology of ageing\footnotemark
+\item Epidemiology of aging\footnotemark
 \item Circadian rhythms\footnotemark
 \item Sleep quality\footnotemark
 \end{itemize}
@@ -376,7 +389,6 @@ average across days within a subject (more on this later)
     \item Sufficient number of days of data. Most studies use $ \geq 3$ days of data with $\geq 10$ hours of wear.
     \item Other criteria: missing data, etc.
     \end{itemize}   
-\item Apply binning or smoothing to the activity data if desired
 \item Calculate features of interest
 \item Incorporate survey design? Survey weights?
 \item Regresison, machine learning, etc.
@@ -473,7 +485,27 @@ average across days within a subject (more on this later)
 
 
 
-\subsection{}
+\begin{frame}
+\frametitle{Physical Activity and aging}
+\begin{itemize}
+\item Scientific question: How do patterns of low/light activity change with age? Do these patterns differ between weekends and weekdays? \pause
+\item One simple (exploratory) way to look at average patterns of low/light activity as a function of age is to take every individual's average (log) activity profile, for weekends and weekdays separately 
+\item Not all participants will contribute to both weekend and weekday estimates! Different number of profiles (days of data) for participants.
+\item For simplicity of notation, consider subjects' average profile across all days. 
+Let $X_{ij}(t)$ denote the activity count for subject $i = 1,\ldots,N$ on day $j = 1,\ldots,J_i$. 
+Then subject $i$'s average profile is: 
+    \begin{align*}
+    \tilde{X}_i(t) = \frac{1}{J_i}\sum_{j=1}^{J_i} \log[1+X_{ij}(t)], \hspace{0.25cm} t = 1,\ldots,1440
+    \end{align*}
+
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Physical Activity and aging}
+\centering
+\includegraphics[height=\textheight]{PA_profiles_by_age}
+\end{frame}
 
 
 
@@ -492,11 +524,41 @@ average across days within a subject (more on this later)
 
 
 
-\section{Lab Exercises}
+\section{Practical Applications}
+
+
+
+\begin{frame}
+\frametitle{Case study: Prediction of 5-year Mortality}
+\begin{itemize}
+\item See prediction vignette \url{https://www.github.com/andrew-leroux/CSS_NHANES/vignettes/}
+\item Walk through the Rmd file (note: the forward selection code takes a while to run, consider reviewing this section later)
+\end{itemize}
+\end{frame}
+
+
 
 \begin{frame}
 \frametitle{Lab Exercises}
+\begin{itemize}
 
+\item Walk through Section 1 of "CSS\_NHANES.R", understand data processing, merging, accounting for wear/non-wear, applying exclusion criteria, 
+creating simple plots.
+\item Work through Section 2 of the "CSS\_NHANES.R" script. Questions:
+    \begin{enumerate}
+    \item Does average total volume of PA differ between 20-39 year olds in different income-to-needs ratio categories? 
+        \begin{itemize}
+        \item Exploratory plots (boxplots? histograms?)
+        \item Regression analyses 
+        \end{itemize}
+    \item Does average weekday activity differ between working age (30-54?) among race/ethnicity categories? Can this difference be explained by 
+    employment status? Is there a time of day difference?
+        \begin{itemize}
+        \item One-way and two-way ANOVA for scalar measure of volume of PA?
+        \item Bootstrap profiles to estimate differences between certain categories of interest?
+        \end{itemize}
+    \end{enumerate}
+\end{itemize}
 \end{frame}
 
 

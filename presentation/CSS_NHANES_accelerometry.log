@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  24 FEB 2019 10:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  24 FEB 2019 13:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1087,140 +1087,142 @@ LaTeX Font Warning: Font shape `T1/cmss/m/n' in size <4> not available
 
 ] [3
 
-] <accelerometers_example.png, id=184, 1612.0225pt x 774.895pt>
+] [4
+
+] <accelerometers_example.png, id=217, 1612.0225pt x 774.895pt>
 File: accelerometers_example.png Graphic file (type png)
 
 <use accelerometers_example.png>
-Package pdftex.def Info: accelerometers_example.png used on input line 134.
+Package pdftex.def Info: accelerometers_example.png used on input line 144.
 (pdftex.def)             Requested size: 290.74263pt x 139.75885pt.
- [4
+ [5
 
  <./accelerometers_example.png>]
-<wearables_example.png, id=223, 1738.495pt x 1201.48875pt>
+<wearables_example.png, id=255, 1738.495pt x 1201.48875pt>
 File: wearables_example.png Graphic file (type png)
 
 <use wearables_example.png>
-Package pdftex.def Info: wearables_example.png used on input line 142.
+Package pdftex.def Info: wearables_example.png used on input line 155.
 (pdftex.def)             Requested size: 290.74263pt x 200.93207pt.
- [5
+ [6
 
  <./wearables_example.png>]
-LaTeX Font Info:    Try loading font information for U+msa on input line 158.
+LaTeX Font Info:    Try loading font information for U+msa on input line 171.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 158.
+LaTeX Font Info:    Try loading font information for U+msb on input line 171.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 158.
+line 171.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
-) [6
-
-] [7
+) [7
 
 ] [8
 
 ] [9
 
-] <raw_accel_data_pt1.png, id=410, 1383.1675pt x 1072.005pt>
+] [10
+
+] <raw_accel_data_pt1.png, id=437, 1383.1675pt x 1072.005pt>
 File: raw_accel_data_pt1.png Graphic file (type png)
 
 <use raw_accel_data_pt1.png>
-Package pdftex.def Info: raw_accel_data_pt1.png used on input line 208.
+Package pdftex.def Info: raw_accel_data_pt1.png used on input line 221.
 (pdftex.def)             Requested size: 290.74263pt x 225.32397pt.
 
-Overfull \vbox (4.67674pt too high) detected at line 208
+Overfull \vbox (4.67674pt too high) detected at line 221
  []
 
-[10
+[11
 
  <./raw_accel_data_pt1.png>]
-<raw_accel_data_pt2.png, id=448, 1611.01875pt x 1107.13625pt>
+<raw_accel_data_pt2.png, id=475, 1611.01875pt x 1107.13625pt>
 File: raw_accel_data_pt2.png Graphic file (type png)
 
 <use raw_accel_data_pt2.png>
-Package pdftex.def Info: raw_accel_data_pt2.png used on input line 213.
+Package pdftex.def Info: raw_accel_data_pt2.png used on input line 226.
 (pdftex.def)             Requested size: 290.74263pt x 199.79962pt.
- [11
+ [12
 
  <./raw_accel_data_pt2.png>]
-<micro_vs_macro_accel_data.png, id=487, 891.33pt x 674.52pt>
+<micro_vs_macro_accel_data.png, id=512, 891.33pt x 674.52pt>
 File: micro_vs_macro_accel_data.png Graphic file (type png)
 
 <use micro_vs_macro_accel_data.png>
-Package pdftex.def Info: micro_vs_macro_accel_data.png used on input line 230.
+Package pdftex.def Info: micro_vs_macro_accel_data.png used on input line 243.
 (pdftex.def)             Requested size: 290.74263pt x 220.0192pt.
- [12
+ [13
 
  <./micro_vs_macro_accel_data.png>]
-<profile_id1.jpeg, id=525, 652.4375pt x 803.0pt>
+<profile_id1.jpeg, id=550, 652.4375pt x 803.0pt>
 File: profile_id1.jpeg Graphic file (type jpg)
  <use profile_id1.jpeg>
-Package pdftex.def Info: profile_id1.jpeg used on input line 237.
+Package pdftex.def Info: profile_id1.jpeg used on input line 250.
 (pdftex.def)             Requested size: 182.11378pt x 224.14662pt.
 
-Overfull \vbox (3.49939pt too high) detected at line 237
- []
-
-[13
-
- <./profile_id1.jpeg>] <profile_id2.jpeg, id=563, 652.4375pt x 803.0pt>
-File: profile_id2.jpeg Graphic file (type jpg)
-
-<use profile_id2.jpeg>
-Package pdftex.def Info: profile_id2.jpeg used on input line 243.
-(pdftex.def)             Requested size: 182.11378pt x 224.14662pt.
-
-Overfull \vbox (3.49939pt too high) detected at line 243
+Overfull \vbox (3.49939pt too high) detected at line 250
  []
 
 [14
 
- <./profile_id2.jpeg>] [15
+ <./profile_id1.jpeg>] <profile_id2.jpeg, id=587, 652.4375pt x 803.0pt>
+File: profile_id2.jpeg Graphic file (type jpg)
+
+<use profile_id2.jpeg>
+Package pdftex.def Info: profile_id2.jpeg used on input line 256.
+(pdftex.def)             Requested size: 182.11378pt x 224.14662pt.
+
+Overfull \vbox (3.49939pt too high) detected at line 256
+ []
+
+[15
+
+ <./profile_id2.jpeg>] [16
 
 ]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 283.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 296.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-) [16
+) [17
 
-] [17
+] [18
 
 ]
-<accel_data_long.png, id=711, 1270.7475pt x 216.81pt>
+<accel_data_long.png, id=730, 1270.7475pt x 216.81pt>
 File: accel_data_long.png Graphic file (type png)
 
 <use accel_data_long.png>
-Package pdftex.def Info: accel_data_long.png used on input line 312.
+Package pdftex.def Info: accel_data_long.png used on input line 325.
 (pdftex.def)             Requested size: 290.74263pt x 49.6039pt.
- [18
+ [19
 
  <./accel_data_long.png>]
-<accel_data_wide.png, id=748, 1301.86375pt x 664.4825pt>
+<accel_data_wide.png, id=767, 1301.86375pt x 664.4825pt>
 File: accel_data_wide.png Graphic file (type png)
 
 <use accel_data_wide.png>
-Package pdftex.def Info: accel_data_wide.png used on input line 329.
+Package pdftex.def Info: accel_data_wide.png used on input line 342.
 (pdftex.def)             Requested size: 290.74263pt x 148.39693pt.
- [19
+ [20
 
  <./accel_data_wide.png>]
-<rnhanesdata.png, id=788, 1332.98pt x 684.5575pt>
+<rnhanesdata.png, id=806, 1332.98pt x 684.5575pt>
 File: rnhanesdata.png Graphic file (type png)
  <use rnhanesdata.png>
-Package pdftex.def Info: rnhanesdata.png used on input line 337.
+Package pdftex.def Info: rnhanesdata.png used on input line 350.
 (pdftex.def)             Requested size: 290.74263pt x 149.30786pt.
 
-[20
+[21
 
  <./rnhanesdata.png>]
 \openout4 = `CSS_NHANES_accelerometry.vrb'.
@@ -1228,43 +1230,61 @@ Package pdftex.def Info: rnhanesdata.png used on input line 337.
  (./CSS_NHANES_accelerometry.vrb
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <9> not available
 (Font)              Font shape `T1/cmtt/m/n' tried instead on input line 12.
-) [21
-
-] [22
+) [22
 
 ] [23
 
+] [24
+
 ]
-<wear_time_by_dow.jpeg, id=937, 1003.75pt x 552.0625pt>
+<wear_time_by_dow.jpeg, id=951, 1003.75pt x 552.0625pt>
 File: wear_time_by_dow.jpeg Graphic file (type jpg)
 
 <use wear_time_by_dow.jpeg>
-Package pdftex.def Info: wear_time_by_dow.jpeg used on input line 418.
+Package pdftex.def Info: wear_time_by_dow.jpeg used on input line 430.
 (pdftex.def)             Requested size: 290.74263pt x 159.90869pt.
- [24
+ [25
 
  <./wear_time_by_dow.jpeg>]
-<ndays_accel_by_age.jpeg, id=974, 1003.75pt x 501.875pt>
+<ndays_accel_by_age.jpeg, id=988, 1003.75pt x 501.875pt>
 File: ndays_accel_by_age.jpeg Graphic file (type jpg)
 
 <use ndays_accel_by_age.jpeg>
-Package pdftex.def Info: ndays_accel_by_age.jpeg used on input line 431.
+Package pdftex.def Info: ndays_accel_by_age.jpeg used on input line 443.
 (pdftex.def)             Requested size: 290.74263pt x 145.37154pt.
- [25
+ [26
 
  <./ndays_accel_by_age.jpeg>]
-<TLAC_by_age_category.jpeg, id=1012, 1405.25pt x 1003.75pt>
+<TLAC_by_age_category.jpeg, id=1024, 1405.25pt x 1003.75pt>
 File: TLAC_by_age_category.jpeg Graphic file (type jpg)
 
 <use TLAC_by_age_category.jpeg>
-Package pdftex.def Info: TLAC_by_age_category.jpeg used on input line 437.
+Package pdftex.def Info: TLAC_by_age_category.jpeg used on input line 449.
 (pdftex.def)             Requested size: 290.74263pt x 207.66927pt.
- [26
+ [27
 
- <./TLAC_by_age_category.jpeg>] [27
+ <./TLAC_by_age_category.jpeg>] [28
 
 ]
-[28
+[29
+
+] [30
+
+] <PA_profiles_by_age.jpeg, id=1171, 652.4375pt x 803.0pt>
+File: PA_profiles_by_age.jpeg Graphic file (type jpg)
+
+<use PA_profiles_by_age.jpeg>
+Package pdftex.def Info: PA_profiles_by_age.jpeg used on input line 508.
+(pdftex.def)             Requested size: 182.11378pt x 224.14662pt.
+
+Overfull \vbox (3.49939pt too high) detected at line 508
+ []
+
+[31
+
+ <./PA_profiles_by_age.jpeg>] [32
+
+] [33
 
 ]
 \tf@nav=\write6
@@ -1276,47 +1296,53 @@ Package pdftex.def Info: TLAC_by_age_category.jpeg used on input line 437.
 \tf@snm=\write8
 \openout8 = `CSS_NHANES_accelerometry.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 507.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 507.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 569.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 569.
  (./CSS_NHANES_accelerometry.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 507.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 507.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 569.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 569.
 Package rerunfilecheck Info: File `CSS_NHANES_accelerometry.out' has not change
 d.
-(rerunfilecheck)             Checksum: DF16BB4655C70957C7E14CA6FA460EDA;1275.
+(rerunfilecheck)             Checksum: 84BC40E06D354B769CAE3C0AC74A5040;1320.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 507.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 569.
  ) 
 Here is how much of TeX's memory you used:
- 21272 strings out of 493014
- 388277 string characters out of 6133351
- 431247 words of memory out of 5000000
- 24265 multiletter control sequences out of 15000+600000
+ 21314 strings out of 493014
+ 389210 string characters out of 6133351
+ 433083 words of memory out of 5000000
+ 24297 multiletter control sequences out of 15000+600000
  20105 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,16n,67p,475b,578s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,16n,67p,475b,650s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
-</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></
-usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
-sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr
-/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsi1440.pfb></usr/l
-ocal/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfss0500.pfb></usr/loc
-al/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfss0600.pfb></usr/local
-/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfss0700.pfb></usr/local/t
-exlive/2016/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb></usr/local/tex
-live/2016/texmf-dist/fonts/type1/public/cm-super/sfss0900.pfb></usr/local/texli
-ve/2016/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/local/texlive
-/2016/texmf-dist/fonts/type1/public/cm-super/sfss1440.pfb></usr/local/texlive/2
-016/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/local/texlive/201
-6/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on CSS_NHANES_accelerometry.pdf (28 pages, 5699197 bytes).
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></us
+r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr
+/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/l
+ocal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/l
+ocal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/lo
+cal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loc
+al/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local
+/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsi1440.pfb></usr/local/t
+exlive/2016/texmf-dist/fonts/type1/public/cm-super/sfss0500.pfb></usr/local/tex
+live/2016/texmf-dist/fonts/type1/public/cm-super/sfss0600.pfb></usr/local/texli
+ve/2016/texmf-dist/fonts/type1/public/cm-super/sfss0700.pfb></usr/local/texlive
+/2016/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb></usr/local/texlive/2
+016/texmf-dist/fonts/type1/public/cm-super/sfss0900.pfb></usr/local/texlive/201
+6/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/local/texlive/2016/
+texmf-dist/fonts/type1/public/cm-super/sfss1440.pfb></usr/local/texlive/2016/te
+xmf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/local/texlive/2016/texm
+f-dist/fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on CSS_NHANES_accelerometry.pdf (33 pages, 5915914 bytes).
 PDF statistics:
- 1181 PDF objects out of 1200 (max. 8388607)
- 1094 compressed objects within 11 object streams
- 67 named destinations out of 1000 (max. 500000)
- 214 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1359 PDF objects out of 1440 (max. 8388607)
+ 1258 compressed objects within 13 object streams
+ 76 named destinations out of 1000 (max. 500000)
+ 219 words of extra memory for PDF output out of 10000 (max. 10000000)
 

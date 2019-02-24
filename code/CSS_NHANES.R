@@ -4,7 +4,7 @@ rm(list=ls())
 ##               which contains the accelerometry data used in our analysis. 
 ##               Load relevant pre-processed data in the rnhanesdata package.
 ##               Also includes some set-up (defining directories to download data/save figures, etc.).
-##  - Section 1: Data processing 
+##  - Section 1: Data processing & EDA
 ##              1a. Download and merge additional data from the CDC website
 ##              1b: Prep accelerometry data for analysis and merge all data
 ##              1c. Process new variables of interest which were downloaded in 1a
@@ -22,16 +22,8 @@ rm(list=ls())
 ##                       - Total activity counts (TAC)
 ##                       - Total log activity counts (TLAC)
 ##                       - Average profiles
-##  - Section 2: Exploratory data analysis
-##               Note that we do not account for survey weights in our EDA (plots, summary statistics), 
-##               though it is possible to do so using functions from the survey package. Complex survey 
-##               analyses are beyond the scope of this talk. 
-##  - Section 2: Data analysis
-##              2a. Function-on-function regression
-##                  * Model physical activity patterns as a function of age in the population
-##              2b. Function-on-function regression
-##                  * Model 5-year mortality as a function of activity via FGLM
-##                  * Model 5-year mortality as a function of activity via FGAM
+##  - Section 2: Lab exericses
+
 
 
 
@@ -277,6 +269,10 @@ if(make_plots){
     source(file.path(code_path, "make_compliance_eda_plots.R"))
 }
 
+## the code to make this plot can be very slow!
+if(make_plots){
+    source(file.path(code_path, "make_act_by_age_eda_plots.R"))
+}
 
     
 
@@ -284,15 +280,14 @@ if(make_plots){
 
 #############################################################################################
 ##                                                                                         ##
-##  Section 1e: Some exploratory plots looking at estimated wear-time protocol compliance  ##
+##  Section 1e: Apply accelerometry exclusion criteria and calculate features of interest  ##
 ##                                                                                         ##
 #############################################################################################
-
-
-
 data_analysis <- 
     data %>% 
     filter(n_good_days >= 3 & good_day == 1 & Age >= 6) 
+    
+    
 
 
 

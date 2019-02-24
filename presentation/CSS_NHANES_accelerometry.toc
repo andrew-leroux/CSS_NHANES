@@ -1,10 +1,10 @@
 \beamer@endinputifotherversion {3.36pt}
 \beamer@sectionintoc {1}{Background}{2}{0}{1}
 \beamer@subsectionintoc {1}{1}{Wearable and Implantable Devices}{3}{0}{1}
-\beamer@subsectionintoc {1}{2}{Overview of Accelerometry Data}{7}{0}{1}
-\beamer@sectionintoc {2}{Application: NHANES}{16}{0}{2}
-\beamer@sectionintoc {3}{An NHANES data package}{19}{0}{3}
-\beamer@sectionintoc {4}{EDA}{22}{0}{4}
-\beamer@subsectionintoc {4}{1}{Compliance}{23}{0}{4}
-\beamer@subsectionintoc {4}{2}{Feature Extraction}{27}{0}{4}
-\beamer@sectionintoc {5}{Lab Exercises}{28}{0}{5}
+\beamer@subsectionintoc {1}{2}{Overview of Accelerometry Data}{8}{0}{1}
+\beamer@sectionintoc {2}{Application: NHANES}{17}{0}{2}
+\beamer@sectionintoc {3}{An NHANES data package}{20}{0}{3}
+\beamer@sectionintoc {4}{EDA}{23}{0}{4}
+\beamer@subsectionintoc {4}{1}{Compliance}{24}{0}{4}
+\beamer@subsectionintoc {4}{2}{Feature Extraction}{28}{0}{4}
+\beamer@sectionintoc {5}{Practical Applications}{32}{0}{5}
