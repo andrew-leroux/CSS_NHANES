@@ -38,7 +38,6 @@ rm(list=ls())
 ## Note: all these packages are available on CRAN and can therefore be downloaded using the install.packages() function,
 ##       the rnhanesdata package is not on CRAN due to package size
 pckgs <- c("gridExtra",                       ## package for plotting >1 ggplot objects in a single figure
-           "fields",                          ## package for making heatmaps
            "devtools",                        ## package used to download R packages stored on GitHub
            "tidyverse",                       ## package(s) for data manipulation/plotting
            "mgcv","refund",                   ## packages used for smoothing/functional regression
