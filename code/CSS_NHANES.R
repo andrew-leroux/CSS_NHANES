@@ -322,31 +322,63 @@ rm(list=c("inx_rows","act_mat","profile_mat"))
 ################################
 
 
-## some exploratory plots 
-## Here we can use tidyverse functions to calculate average profiles with groups
-## because the number of groups is small
-data_analysis %>% 
-    filter(Race %in% c("White","Black","Mexican American") & Age >= 30 & Age <55 & !is.na(Employed)) %>% 
-    group_by(Race, Employed) %>% 
-    summarize_at(vars(MIN1:MIN1440),.funs=mean,na.rm=TRUE) %>% 
-    gather(key="time", value="AC", MIN1:MIN1440) %>% 
-    mutate("time" = as.numeric(str_extract(time, "[0-9]+"))) %>% 
-    ggplot(aes(x=time, y=AC, colour=Employed)) + geom_line() + 
-    facet_wrap(~Race, ncol=3, strip.position = "top") + xlab("Time of Day") + ylab("log(1+AC)") +
-    scale_x_continuous(breaks=c(1,6,12,18,23)*60 + 1, 
-                       labels=c("01:00","06:00","12:00","18:00","23:00"),limits=c(0,1440)) 
-    
+if(make_plots){
+    ## some exploratory plots 
+    ## Here we can use tidyverse functions to calculate average profiles with groups
+    ## because the number of groups is small
+    ## NOTE: standard error bars on the plots below are underestimated!! probably by quite a bit
+    jpeg(file.path(figure_path, paste0("PA_profiles_by_race_employment_age_30_55_raw.jpeg")), height=600, width=1800, quality=100)
+    data_analysis %>% 
+        filter(Race %in% c("White","Black","Mexican American") & Age >= 30 & Age <55 & !is.na(Employed)) %>% 
+        group_by(Race, Employed) %>% 
+        summarize_at(vars(MIN1:MIN1440),.funs=mean,na.rm=TRUE) %>% 
+        gather(key="time", value="AC", MIN1:MIN1440) %>% 
+        mutate("time" = as.numeric(str_extract(time, "[0-9]+"))) %>% 
+        ggplot(aes(x=time, y=AC, colour=Employed)) + geom_line() + 
+        facet_wrap(~Race, ncol=3, strip.position = "top") + xlab("Time of Day") + ylab("log(1+AC)") +
+        scale_x_continuous(breaks=c(1,6,12,18,23)*60 + 1, 
+                           labels=c("01:00","06:00","12:00","18:00","23:00"),limits=c(0,1440)) +
+        theme(legend.justification = c(0, 1), legend.position = c(0.25, 1),
+              legend.background=element_blank(),legend.key = element_blank())
+    dev.off()
 
-## A bit hard to see, data still noisy. Perhaps try smoothing instead of averaging columnwise?
-## Again, we can only do this "quickly" because we've subset the data substantially
-data_analysis %>% 
-    filter(Race %in% c("White","Black","Mexican American") & Age >= 30 & Age <55 & !is.na(Employed)) %>% 
-    gather(key="time", value="AC", MIN1:MIN1440) %>% 
-    mutate("time" = as.numeric(str_extract(time, "[0-9]+"))) %>% 
-    ggplot(aes(x=time, y=AC, colour=Employed)) + geom_smooth(method="gam", formula=y~s(x, bs="tp", k=10)) + 
-    facet_wrap(~Race, ncol=3, strip.position = "top") + xlab("Time of Day") + ylab("log(1+AC)") +
-    scale_x_continuous(breaks=c(1,6,12,18,23)*60 + 1, 
-                       labels=c("01:00","06:00","12:00","18:00","23:00"),limits=c(0,1440)) 
+    ## A bit hard to see, data still noisy. Perhaps try smoothing instead of averaging columnwise?
+    ## Again, we can only do this "quickly" because we've subset the data substantially
+    jpeg(file.path(figure_path, paste0("PA_profiles_by_race_employment_age_30_55_sm.jpeg")), height=600, width=1800, quality=100)
+    data_analysis %>% 
+        filter(Race %in% c("White","Black","Mexican American") & Age >= 30 & Age <55 & !is.na(Employed)) %>% 
+        gather(key="time", value="AC", MIN1:MIN1440) %>% 
+        mutate("time" = as.numeric(str_extract(time, "[0-9]+"))) %>% 
+        ggplot(aes(x=time, y=AC, colour=Employed)) + geom_smooth(method="gam", formula=y~s(x, bs="tp", k=10)) + 
+        facet_wrap(~Race, ncol=3, strip.position = "top") + xlab("Time of Day") + ylab("log(1+AC)") +
+        scale_x_continuous(breaks=c(1,6,12,18,23)*60 + 1, 
+                           labels=c("01:00","06:00","12:00","18:00","23:00"),limits=c(0,1440)) + 
+        theme(legend.justification = c(0, 1), legend.position = c(0.25, 1),
+              legend.background=element_blank(),legend.key = element_blank())
+    dev.off()
+    
+    ## Some unexpected patterns among black americans.
+    ## Maybe confounding? Age? Gender?
+    jpeg(file.path(figure_path, paste0("PA_profiles_by_race_gender_employment_age_30_55_sm.jpeg")), height=1200, width=1800, quality=100)
+    data_analysis %>% 
+        filter(Race %in% c("White","Black","Mexican American") & Age >= 30 & Age <55 & !is.na(Employed)) %>% 
+        gather(key="time", value="AC", MIN1:MIN1440) %>% 
+        mutate("time" = as.numeric(str_extract(time, "[0-9]+"))) %>% 
+        ggplot(aes(x=time, y=AC, colour=Employed)) + geom_smooth(method="gam", formula=y~s(x, bs="tp", k=10)) + 
+        facet_wrap(Gender~Race, ncol=3, strip.position = "top") + xlab("Time of Day") + ylab("log(1+AC)") +
+        scale_x_continuous(breaks=c(1,6,12,18,23)*60 + 1, 
+                           labels=c("01:00","06:00","12:00","18:00","23:00"),limits=c(0,1440)) + 
+        theme(legend.justification = c(0, 1), legend.position = c(0.25, 1),
+              legend.background=element_blank(),legend.key = element_blank())
+    dev.off()
+    
+    data_tab <- data_analysis %>% 
+        filter(Race %in% c("White","Black","Mexican American") & Age >= 30 & Age <55 & !is.na(Employed)) %>% 
+        select(Race, Employed, Gender)
+    table(data_tab$Race, data_tab$Employed,data_tab$Gender)
+    rm(list=c("data_tab"))
+}
+
 
 
 
