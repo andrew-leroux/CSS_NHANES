@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  24 FEB 2019 13:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  25 FEB 2019 09:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1093,7 +1093,7 @@ LaTeX Font Warning: Font shape `T1/cmss/m/n' in size <4> not available
 File: accelerometers_example.png Graphic file (type png)
 
 <use accelerometers_example.png>
-Package pdftex.def Info: accelerometers_example.png used on input line 144.
+Package pdftex.def Info: accelerometers_example.png used on input line 149.
 (pdftex.def)             Requested size: 290.74263pt x 139.75885pt.
  [5
 
@@ -1102,23 +1102,23 @@ Package pdftex.def Info: accelerometers_example.png used on input line 144.
 File: wearables_example.png Graphic file (type png)
 
 <use wearables_example.png>
-Package pdftex.def Info: wearables_example.png used on input line 155.
+Package pdftex.def Info: wearables_example.png used on input line 160.
 (pdftex.def)             Requested size: 290.74263pt x 200.93207pt.
  [6
 
  <./wearables_example.png>]
-LaTeX Font Info:    Try loading font information for U+msa on input line 171.
+LaTeX Font Info:    Try loading font information for U+msa on input line 176.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 171.
+LaTeX Font Info:    Try loading font information for U+msb on input line 176.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 171.
+line 176.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
@@ -1135,10 +1135,10 @@ thkerncmss.
 File: raw_accel_data_pt1.png Graphic file (type png)
 
 <use raw_accel_data_pt1.png>
-Package pdftex.def Info: raw_accel_data_pt1.png used on input line 221.
+Package pdftex.def Info: raw_accel_data_pt1.png used on input line 226.
 (pdftex.def)             Requested size: 290.74263pt x 225.32397pt.
 
-Overfull \vbox (4.67674pt too high) detected at line 221
+Overfull \vbox (4.67674pt too high) detected at line 226
  []
 
 [11
@@ -1148,7 +1148,7 @@ Overfull \vbox (4.67674pt too high) detected at line 221
 File: raw_accel_data_pt2.png Graphic file (type png)
 
 <use raw_accel_data_pt2.png>
-Package pdftex.def Info: raw_accel_data_pt2.png used on input line 226.
+Package pdftex.def Info: raw_accel_data_pt2.png used on input line 231.
 (pdftex.def)             Requested size: 290.74263pt x 199.79962pt.
  [12
 
@@ -1157,7 +1157,7 @@ Package pdftex.def Info: raw_accel_data_pt2.png used on input line 226.
 File: micro_vs_macro_accel_data.png Graphic file (type png)
 
 <use micro_vs_macro_accel_data.png>
-Package pdftex.def Info: micro_vs_macro_accel_data.png used on input line 243.
+Package pdftex.def Info: micro_vs_macro_accel_data.png used on input line 248.
 (pdftex.def)             Requested size: 290.74263pt x 220.0192pt.
  [13
 
@@ -1165,10 +1165,10 @@ Package pdftex.def Info: micro_vs_macro_accel_data.png used on input line 243.
 <profile_id1.jpeg, id=550, 652.4375pt x 803.0pt>
 File: profile_id1.jpeg Graphic file (type jpg)
  <use profile_id1.jpeg>
-Package pdftex.def Info: profile_id1.jpeg used on input line 250.
+Package pdftex.def Info: profile_id1.jpeg used on input line 255.
 (pdftex.def)             Requested size: 182.11378pt x 224.14662pt.
 
-Overfull \vbox (3.49939pt too high) detected at line 250
+Overfull \vbox (3.49939pt too high) detected at line 255
  []
 
 [14
@@ -1177,10 +1177,10 @@ Overfull \vbox (3.49939pt too high) detected at line 250
 File: profile_id2.jpeg Graphic file (type jpg)
 
 <use profile_id2.jpeg>
-Package pdftex.def Info: profile_id2.jpeg used on input line 256.
+Package pdftex.def Info: profile_id2.jpeg used on input line 261.
 (pdftex.def)             Requested size: 182.11378pt x 224.14662pt.
 
-Overfull \vbox (3.49939pt too high) detected at line 256
+Overfull \vbox (3.49939pt too high) detected at line 261
  []
 
 [15
@@ -1188,7 +1188,7 @@ Overfull \vbox (3.49939pt too high) detected at line 256
  <./profile_id2.jpeg>] [16
 
 ]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 296.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 301.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/t1cmtt.fd
@@ -1202,7 +1202,7 @@ File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 File: accel_data_long.png Graphic file (type png)
 
 <use accel_data_long.png>
-Package pdftex.def Info: accel_data_long.png used on input line 325.
+Package pdftex.def Info: accel_data_long.png used on input line 330.
 (pdftex.def)             Requested size: 290.74263pt x 49.6039pt.
  [19
 
@@ -1211,7 +1211,7 @@ Package pdftex.def Info: accel_data_long.png used on input line 325.
 File: accel_data_wide.png Graphic file (type png)
 
 <use accel_data_wide.png>
-Package pdftex.def Info: accel_data_wide.png used on input line 342.
+Package pdftex.def Info: accel_data_wide.png used on input line 347.
 (pdftex.def)             Requested size: 290.74263pt x 148.39693pt.
  [20
 
@@ -1219,7 +1219,7 @@ Package pdftex.def Info: accel_data_wide.png used on input line 342.
 <rnhanesdata.png, id=806, 1332.98pt x 684.5575pt>
 File: rnhanesdata.png Graphic file (type png)
  <use rnhanesdata.png>
-Package pdftex.def Info: rnhanesdata.png used on input line 350.
+Package pdftex.def Info: rnhanesdata.png used on input line 355.
 (pdftex.def)             Requested size: 290.74263pt x 149.30786pt.
 
 [21
@@ -1241,7 +1241,7 @@ LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <9> not available
 File: wear_time_by_dow.jpeg Graphic file (type jpg)
 
 <use wear_time_by_dow.jpeg>
-Package pdftex.def Info: wear_time_by_dow.jpeg used on input line 430.
+Package pdftex.def Info: wear_time_by_dow.jpeg used on input line 435.
 (pdftex.def)             Requested size: 290.74263pt x 159.90869pt.
  [25
 
@@ -1250,7 +1250,7 @@ Package pdftex.def Info: wear_time_by_dow.jpeg used on input line 430.
 File: ndays_accel_by_age.jpeg Graphic file (type jpg)
 
 <use ndays_accel_by_age.jpeg>
-Package pdftex.def Info: ndays_accel_by_age.jpeg used on input line 443.
+Package pdftex.def Info: ndays_accel_by_age.jpeg used on input line 448.
 (pdftex.def)             Requested size: 290.74263pt x 145.37154pt.
  [26
 
@@ -1259,7 +1259,7 @@ Package pdftex.def Info: ndays_accel_by_age.jpeg used on input line 443.
 File: TLAC_by_age_category.jpeg Graphic file (type jpg)
 
 <use TLAC_by_age_category.jpeg>
-Package pdftex.def Info: TLAC_by_age_category.jpeg used on input line 449.
+Package pdftex.def Info: TLAC_by_age_category.jpeg used on input line 454.
 (pdftex.def)             Requested size: 290.74263pt x 207.66927pt.
  [27
 
@@ -1274,10 +1274,10 @@ Package pdftex.def Info: TLAC_by_age_category.jpeg used on input line 449.
 File: PA_profiles_by_age.jpeg Graphic file (type jpg)
 
 <use PA_profiles_by_age.jpeg>
-Package pdftex.def Info: PA_profiles_by_age.jpeg used on input line 508.
+Package pdftex.def Info: PA_profiles_by_age.jpeg used on input line 513.
 (pdftex.def)             Requested size: 182.11378pt x 224.14662pt.
 
-Overfull \vbox (3.49939pt too high) detected at line 508
+Overfull \vbox (3.49939pt too high) detected at line 513
  []
 
 [31
@@ -1296,11 +1296,11 @@ Overfull \vbox (3.49939pt too high) detected at line 508
 \tf@snm=\write8
 \openout8 = `CSS_NHANES_accelerometry.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 569.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 569.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 574.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 574.
  (./CSS_NHANES_accelerometry.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 569.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 569.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 574.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 574.
 Package rerunfilecheck Info: File `CSS_NHANES_accelerometry.out' has not change
 d.
 (rerunfilecheck)             Checksum: 84BC40E06D354B769CAE3C0AC74A5040;1320.
@@ -1309,7 +1309,7 @@ d.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 569.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 574.
  ) 
 Here is how much of TeX's memory you used:
  21314 strings out of 493014
@@ -1339,7 +1339,7 @@ ve/2016/texmf-dist/fonts/type1/public/cm-super/sfss0700.pfb></usr/local/texlive
 texmf-dist/fonts/type1/public/cm-super/sfss1440.pfb></usr/local/texlive/2016/te
 xmf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/local/texlive/2016/texm
 f-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on CSS_NHANES_accelerometry.pdf (33 pages, 5915914 bytes).
+Output written on CSS_NHANES_accelerometry.pdf (33 pages, 5916100 bytes).
 PDF statistics:
  1359 PDF objects out of 1440 (max. 8388607)
  1258 compressed objects within 13 object streams

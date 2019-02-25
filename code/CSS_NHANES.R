@@ -38,9 +38,9 @@ rm(list=ls())
 ## Note: all these packages are available on CRAN and can therefore be downloaded using the install.packages() function,
 ##       the rnhanesdata package is not on CRAN due to package size
 pckgs <- c("gridExtra",                       ## package for plotting >1 ggplot objects in a single figure
-           "tidyverse",                       ## package(s) for data manipulation/plotting
            "fields",                          ## package for making heatmaps
            "devtools",                        ## package used to download R packages stored on GitHub
+           "tidyverse",                       ## package(s) for data manipulation/plotting
            "mgcv","refund",                   ## packages used for smoothing/functional regression
            "survey"                           ## package used for analyzing (complex) survey data
            )
@@ -285,14 +285,22 @@ if(make_plots){
 #############################################################################################
 data_analysis <- 
     data %>% 
-    filter(n_good_days >= 3 & good_day == 1 & Age >= 6) 
+    filter(n_good_days >= 3 & good_day == 1 & Age >= 6) %>% 
+    mutate("TLAC" = rowSums(log(1+select(.,MIN1:MIN1440)),na.rm=TRUE),
+           "TAC" = rowSums(select(.,MIN1:MIN1440),na.rm=TRUE)) %>% 
+    group_by(SEQN) %>% 
+    summarise()
     
     
 
 
 
 
-
+################################
+##                            ##
+##  Section 2: Lab exericses  ##
+##                            ##
+################################
 
 
 

@@ -60,6 +60,7 @@
     \item Micro-scale (raw, sub-second) data
     \item Macro-scale data
     \end{itemize}
+\item Working with publicly accelerometry data in NHANES
 \end{itemize}
 \end{frame}
 
@@ -79,10 +80,14 @@
 
 
 \begin{frame}
-\frametitle{What are Wearables Useful for?}
+\frametitle{Why Do We Care?}
 \begin{itemize}
-\item Prediction of mortality: simple summary features predict 5-year mortality better than age
-\item others?
+\item Prediction of mortality: simple summary features predict 5-year mortality better than age (walk through this analysis later)
+\item Self-reported PA shown to be associated with many positive health outcomes
+    \begin{itemize}
+    \item Recall bias
+    \item Low/moderate correlation with objectively measured PA
+    \end{itemize}
 \end{itemize}
 \end{frame}
 
